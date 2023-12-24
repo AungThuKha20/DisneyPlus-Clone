@@ -63,10 +63,10 @@ const Navbar = () => {
               (item, index) =>
                 index < 3 && <NavbarItem key={item.id} icon={item.icon} />
             )}
-            <div onClick={handleMenu} className="  lg:hidden relative">
+            <div onClick={handleMenu} className="  lg:hidden z-10 relative">
               <NavbarItem name={""} icon={<BsThreeDotsVertical />} />
               {menu ? (
-                <div className=" border border-gray-300 p-4  absolute">
+                <div className=" border bg-gray-900 border-gray-200 p-4 z-10  absolute">
                   {navItem.map(
                     (item, index) =>
                       index > 2 && (
