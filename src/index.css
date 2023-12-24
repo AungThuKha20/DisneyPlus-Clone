@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: rgb(15, 15, 39);
+}
+.slider-image {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  object-position: center;
+  top: 10%;
+  object-position: 2px 15%;
+
+}
+
+@media (min-width: 768px) {
+  .slider-image {
+    position: relative;
+    top: 25%;
+    object-position: 2px 15%;
+    height: 310px;
+  }
+}
+
+
