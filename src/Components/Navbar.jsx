@@ -50,9 +50,9 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className=" flex  justify-between py-2 px-4 ">
+      <div className=" flex items-center justify-between py-2 px-1 ">
         <div className=" flex">
-          <img src={logo} className="h-[40px]" />
+          <img src={logo} className="h-[40px] " />
           <div className=" lg:mx-12 lg:flex hidden justify-center gap-6 align-middle">
             {navItem.map((item) => {
               return <NavbarItem key={item.id} {...item} />;
@@ -66,7 +66,7 @@ const Navbar = () => {
             <div onClick={handleMenu} className="  lg:hidden z-10 relative">
               <NavbarItem name={""} icon={<BsThreeDotsVertical />} />
               {menu ? (
-                <div className=" border bg-gray-900 border-gray-200 p-4 z-10  absolute">
+                <div className=" border bg-gray-900 border-gray-200 px-2 py-4 z-10  absolute">
                   {navItem.map(
                     (item, index) =>
                       index > 2 && (
@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
         <img
           src={profile}
-          className=" cursor-pointer h-[40px] w-[40px] rounded-full"
+          className=" cursor-pointer h-[40px] w-[40px] rounded-full me-1"
           alt=""
         />
       </div>
