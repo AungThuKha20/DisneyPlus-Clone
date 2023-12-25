@@ -20,7 +20,7 @@ const Slider = () => {
   const imageBaseUrl = "https://image.tmdb.org/t/p/original";
 
   return (
-    <div className="flex justify-center mx-2  md:mx-6 my-6 ">
+    <div className="flex justify-center mx-2   md:mx-6 my-6 ">
       <Carousel
         showIndicators={true}
         autoPlay={true}
@@ -28,6 +28,7 @@ const Slider = () => {
         showThumbs={false}
         showStatus={false}
         infiniteLoop={true}
+        stopOnHover={false}
         className="h-[320px]"
       >
         {movie?.map((item) => (
@@ -37,7 +38,7 @@ const Slider = () => {
           >
             <img
               src={imageBaseUrl + item.poster_path}
-              className="slider-image"
+              className=" rounded-md slider-image"
               alt=""
             />
           </div>

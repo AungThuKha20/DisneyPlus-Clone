@@ -12,7 +12,9 @@ const MovieGenre = () => {
             className=" md:mx-7 mx-2 my-8 text-white flex flex-wrap"
             key={item.id}
           >
-            <h2 className=" text-[24px] mb-2 font-bold">{item.name}</h2>
+            <h2 className=" text-[18px] font-serif md:text-[22px] mb-2 font-bold">
+              {item.name}
+            </h2>
 
             <MovieGenreCard genreId={item.id} />
           </div>
